@@ -1,0 +1,79 @@
+tr {
+  height: 85px;
+  font-family: 'Nunito';
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  font-family: 'Nunito Black';
+  margin-top: 35px;
+  margin-bottom: 80px;
+}
+
+table {
+  margin: auto;
+  border-collapse: separate;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.element {
+  width: 85px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+.blue-bg {
+  background-color: dodgerblue;
+}
+
+.purple-bg {
+  background-color: mediumpurple;
+}
+
+.green-bg {
+  background-color: mediumseagreen;
+}
+
+.orange-bg {
+  background-color: darkorange;
+}
+
+.light-orange-bg {
+  background-color: orange;
+}
+
+.pink-bg {
+  background-color: hotpink;
+}
+
+.yellow-bg {
+  background-color: yellow;
+}
+
+.light-yellow-bg {
+  background-color: goldenrod;
+}
+/*
+.red-bg {
+  background-color: red;
+}*/
+
+.my-popover {
+  background: #212021;
+  font-size: 20px;
+}
+.my-popover .arrow::after {
+  color: white;
+}
+
+.my-popover .popover-body{
+  color: white !important;
+}

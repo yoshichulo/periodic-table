@@ -1,0 +1,33 @@
+<div style="text-align:center">
+  <h1>
+    Periodic Table
+  </h1>
+  <div class="col-12 align-content-center">
+    <table>
+      <tr *ngFor="let row of displayJson; index as i">
+        <td *ngFor="let element of row; index as j"
+            (click)="elementClick($event, i, j)"
+            class="{{element != null ? element.color + ' element cursor-pointer pb-2 pl-2' : ''}}">
+          <div
+            ngbPopover="{{element != null ? element.full : ''}}"
+            triggers="mouseenter:mouseleave"
+            placement="top"
+            popoverClass="my-popover"
+            [openDelay]="500">
+            <div>
+              {{(element != null ? element.name : '')}}
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <div class="col-12 align-content-center mt-3">
+      <div class="btn btn-primary mx-2" (click)="show(true)">
+        Show everything
+      </div>
+      <div class="btn btn-primary mx-2" (click)="show(false)">
+        Hide everything
+      </div>
+    </div>
+  </div>
+</div>

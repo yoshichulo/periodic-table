@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "periodic-table"
+    }
+  },
+  "defaultProject": "periodic-table",
+  "cli": {
+    "analytics": "9ba0a864-dcab-46bf-b7e1-2cffcfb518bc"
+  }
 }
